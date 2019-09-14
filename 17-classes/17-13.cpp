@@ -1,3 +1,9 @@
+/*
+Greg Bastianelli
+09-14-2019
+17.13 - Add init and clean up without modifiying the main function.
+*/
+
 #include <iostream>
 class Init
 {
@@ -9,6 +15,7 @@ class Init
         {  std::cout << "Clean up";  }
 };
 
+// global variables are constructed before main and deconstructed after.
 Init init;
 
 int main()

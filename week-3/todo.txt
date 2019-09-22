@@ -1,0 +1,8 @@
+
+
+Add code to function foo() in auto_ptr1.cpp to demonstrate if p1 == p2.
+
+Code example unique_ptr2.cpp has some redundant code displaying the contents of objects. Write a funciton that displays whether or not the unique_ptr is empty. The function call will send the appropriate auto_ptr to the function.
+
+X.18.2 Define a resource handle, a ‘‘smart pointer’’ that holds a pointer to an object on the free store passed as an argument to a constructor. ‘‘Forget’’ to define copy operations. Now test the handle by defining variables, members, objects on the free store, passing arguments, etc., and see where leaks occur. Note: for the purposes of this exercise, consider “free store” and “heap” to be the same. There is quite a discussion on the internet about this.
+

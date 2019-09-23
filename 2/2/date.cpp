@@ -11,8 +11,8 @@ void Date::add_year(int n){
 void Date::add_month(int n){
     int months_left = 12 - m;
     if( n > months_left ){
-        Date::add_year( n / 12 );
-        Date::add_month( n % 12 );
+        this->add_year( n / 12 );
+        this->add_month( n % 12 );
     } else {
         m = m + n;
     }
@@ -20,9 +20,10 @@ void Date::add_month(int n){
 
 void Date::add_day(int n){
     int days_left = 30 - d;
-    if( n > days_left ){
-        Date::add_month( n / 30 );
-        Date::add_day( n % 30 );
+    int& count = n;
+    if( count > days_left ){
+        this->add_month( n / 30 );
+        this->add_day( n % 30 );
     } else {
         d = d + n;
     }

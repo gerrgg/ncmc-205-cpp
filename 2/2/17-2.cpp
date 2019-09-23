@@ -15,7 +15,7 @@ int main()
     date.to_str();
     date.add_year(99);
     date.to_str();
-    // date.add_day(1000);
+    date.add_day(1000);
     date.to_str();
 
     return 0;
